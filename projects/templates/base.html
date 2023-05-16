@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<div style="background-image: url('static/css/background1.jpg');"></div>
+<body>
+<div style="background-image: url('static/css/background1.jpg');">
+<div class="box">
+    <form action="" method="post">
+      {% csrf_token %}
+         <h3>LOGIN</h3>
+
+          <div class="inputbox" >
+            <input type="text" name="Username" placeholder="Username">
+              <span>Username</span>
+              <i></i>
+          </div>
+
+          <div class="inputbox" >
+             <input type="text" name="password" placeholder="password">
+              <span>Password</span>
+              <i></i>
+          </div><br>
+
+          <div class="links">
+             <a href="#">Forget password?</a>
+             <a href="signup">Signup</a>
+          </div><br>
+
+          <div>
+              <input type="submit" value="login">
+          </div>
+
+    </form>
+
+</div>
+</div>
+</div>
+
+</body>
+</div>
+</html>
