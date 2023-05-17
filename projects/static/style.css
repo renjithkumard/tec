@@ -6,21 +6,17 @@
 }
 
 body{
-     display: flex;
+
      justify-content: center;
      align-items: center;
      min-height:100vh;
      background-color: #fff;
-     background-image: url('static/css/background1.jpg')no-repeat;
-     background-position: center;
-     background-size: cover;
-
 }
 .box{
      position: relative;
      width: 350px;
      height: 430px;
-     background: #gray;
+     background: #808080;
      border-radius: 9px;
      overflow: hidden;
 }
@@ -86,7 +82,7 @@ body{
     left: 0;
     padding: 10px 9px 9px;
     pointer-events: none;
-    color: #8f8f8f;
+    color: #fff;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;

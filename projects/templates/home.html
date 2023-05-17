@@ -2,14 +2,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Company - Landing Page</title>
+  <link href="static/home.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-<h3>HOME PAGE</h3>
-<button class="btn" type="submit"><a href="signin"> sign in </a></button>
-<button class="btn" type="submit"><a href="signup"> sign up </a> </button>
 
+  <div class="navbar">
+    <ul>
+      <li><a  class="active" href="#">Home</a></li>
+      <li><a href="signin">Signin</a></li>
+      <li><a href="signup">Signup</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+
+  </div>
+
+  <section class="hero">
+     <img src="static/img/bg-image.jpg">
+    <div class="center">Startup Company</div>
+    <div class="tagline">A startup is a company that's in the initial stages of business.</div>
+    <button class="cta-button"><a href="#">Get Started</a></button>
+  </section>
+
+  <section class="features">
+    <h2>Our Services</h2>
+    <p>Startup company is a team of dedicated individuals who are passionate about creating innovative to make a positive solutions to make a positive impact on the world.<br>our goal is to develop cutting-edge technology that helps to make people's lives easier and better.with a focus on sustainabillitty and social responsabillity. </p><br><br><br><br>
+    <div class="feature">
+      <img src="static/img/pic2.jpg"  alt="Service 1">
+      <h3>Service 1</h3>
+      <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="feature">
+      <img src="static/img/pic1.jpg" alt="Service 2">
+      <h3>Service 2</h3>
+      <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+    </div><br><br><br><br><br><br><br>
+
+    <div class="feature">
+      <img src="static/img/pic3.jpg"  alt="Service 3">
+      <h3>Service 3</h3>
+      <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+    </div>
+  </section>
+<section class="footer">
+  <p>&copy;2023 startup company. all rights reversed.</p>
+</section>
 </body>
 </html>

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link href="static/style.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
-<div style="background-image: url('static/css/background1.jpg');"></div>
+
 <body>
-<div style="background-image: url('static/css/background1.jpg');">
+
 <div class="box">
-    <form action="" method="post">
+    <form action="/" method="post">
       {% csrf_token %}
          <h3>LOGIN</h3>
 

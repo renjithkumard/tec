@@ -29,9 +29,9 @@ def signup(request):
         else:
             messages.info(request, "password is not matching")
             return redirect('signup')
-        return redirect('/')
+        return redirect('signup')
 
-    return render(request, 'index.html')
+    return render(request, 'signup.html')
 def signin(request):
     if request.method == "POST":
         Username = request.POST['Username']
@@ -39,8 +39,8 @@ def signin(request):
         user = auth.authenticate(username=Username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('signup')
+            return redirect('home')
         else:
             messages.info(request, 'invalid credential')
-            return redirect('signup')
-    return render(request, 'base.html')
+            return redirect('home')
+    return render(request, 'signin.html')
